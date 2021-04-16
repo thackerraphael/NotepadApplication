@@ -115,7 +115,15 @@ void MainWindow::on_actionRedo_triggered()
 
 void MainWindow::on_actionPrint_triggered()
 {
-
+     QPrinter p;
+    p.setPrinterName("HP Laser Jet");
+    QPrintDialog pd(&p,this);
+    if(pd.exec()==QDialog::Rejected)
+    {
+        QMessageBox::warning(this,"Error","Can't access printer");
+        return;
+    }
+    ui->textEdit->print(&p);
 }
 
 void MainWindow::on_actionBold_triggered()
