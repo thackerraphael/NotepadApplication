@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>739</width>
+    <height>323</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>751</width>
+      <height>261</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>739</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrint"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+   </widget>
+   <widget class="QMenu" name="menuFont">
+    <property name="title">
+     <string>Font</string>
+    </property>
+    <addaction name="actionBold"/>
+    <addaction name="actionItalic"/>
+    <addaction name="actionUnderline"/>
+    <addaction name="actionFont_color"/>
+    <addaction name="actionFont_bgcolor"/>
+    <addaction name="actionselect_Font"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAboutqt"/>
+    <addaction name="actionHelp"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionzoom_in"/>
+    <addaction name="actionzoom_out"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuFont"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuView"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="toolBar_3">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionSave_as"/>
+   <addaction name="actionClose"/>
+   <addaction name="actionCut"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actionPaste"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="actionPrint"/>
+   <addaction name="actionBold"/>
+   <addaction name="actionItalic"/>
+   <addaction name="actionUnderline"/>
+   <addaction name="actionFont_color"/>
+   <addaction name="actionFont_bgcolor"/>
+   <addaction name="actionHelp"/>
+   <addaction name="actionAboutqt"/>
+   <addaction name="actionselect_Font"/>
+   <addaction name="actionzoom_in"/>
+   <addaction name="actionzoom_out"/>
+  </widget>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/new.png</normaloff>:/Desktop/images/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/open.png</normaloff>:/Desktop/images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/save.ico</normaloff>:/Desktop/images/save.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/save as.jpg</normaloff>:/Desktop/images/save as.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/quit.png</normaloff>:/Desktop/images/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/cut.png</normaloff>:/Desktop/images/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/copy.jpg</normaloff>:/Desktop/images/copy.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/paste.png</normaloff>:/Desktop/images/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/undo.jpg</normaloff>:/Desktop/images/undo.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/redo.jpg</normaloff>:/Desktop/images/redo.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/print.png</normaloff>:/Desktop/images/print.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="actionBold">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/bold.png</normaloff>:/Desktop/images/bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bold</string>
+   </property>
+  </action>
+  <action name="actionItalic">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/italic.png</normaloff>:/Desktop/images/italic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Italic</string>
+   </property>
+  </action>
+  <action name="actionUnderline">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/underline.png</normaloff>:/Desktop/images/underline.png</iconset>
+   </property>
+   <property name="text">
+    <string>Underline</string>
+   </property>
+  </action>
+  <action name="actionFont_color">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/font color.png</normaloff>:/Desktop/images/font color.png</iconset>
+   </property>
+   <property name="text">
+    <string>Font color</string>
+   </property>
+  </action>
+  <action name="actionFont_bgcolor">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/font bgcolor.png</normaloff>:/Desktop/images/font bgcolor.png</iconset>
+   </property>
+   <property name="text">
+    <string>Font bgcolor</string>
+   </property>
+  </action>
+  <action name="actionAboutqt">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/about.png</normaloff>:/Desktop/images/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>Aboutqt</string>
+   </property>
+  </action>
+  <action name="actionselect_Font">
+   <property name="text">
+    <string>select Font</string>
+   </property>
+  </action>
+  <action name="actionzoom_in">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/zoom in.png</normaloff>:/Desktop/images/zoom in.png</iconset>
+   </property>
+   <property name="text">
+    <string>zoom in</string>
+   </property>
+  </action>
+  <action name="actionzoom_out">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/zoom out.png</normaloff>:/Desktop/images/zoom out.png</iconset>
+   </property>
+   <property name="text">
+    <string>zoom out</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="../../Documents/notepad/resources.qrc">
+     <normaloff>:/Desktop/images/help.png</normaloff>:/Desktop/images/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../Documents/notepad/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
